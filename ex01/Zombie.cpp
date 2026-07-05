@@ -6,7 +6,7 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 17:13:53 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/05 17:25:15 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/07/05 18:14:30 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@ Zombie::Zombie () {
 }
 
 Zombie::~Zombie () {
-	std::cout << "Zombie: " << name << " Destructor\n";
+	std::cout << "Zombie: " << name_ << " Destructor\n";
 	return ;
 }
 
 void	Zombie::announce () {
-	std::cout << name << ": BraiiiiiiinnnzzzZ...\n";
+	std::cout << name_ << ": BraiiiiiiinnnzzzZ...\n";
 	return ;
 }
 
-void	Zombie::set_name ( std::string init_name ) {
-	name = init_name;
+void	Zombie::set_name ( std::string name ) {
+	name_ = name;
 	return ;
 }

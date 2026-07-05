@@ -6,7 +6,7 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 17:00:33 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/05 17:23:25 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/07/05 18:14:36 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ class	Zombie {
 	public:
 		Zombie();
 		~Zombie();
-		void	set_name( std::string init_name);
+		void	set_name( std::string name);
 		void	announce( void );
 	private:
-		std::string	name;
+		std::string	name_;
 };
 
 Zombie* zombieHorde( int N, std::string name );
