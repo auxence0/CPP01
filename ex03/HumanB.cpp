@@ -6,7 +6,7 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 18:00:19 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/05 18:45:38 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/07/06 12:59:05 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ void	HumanB::setWeapon ( Weapon& weapon) {
 }
 
 void	HumanB::attack () {
-	std::cout << name_ << " attacks with their " << weaponB_->getType() << "\n";
+	if (weaponB_)
+		std::cout << name_ << " attacks with their " << weaponB_->getType() << "\n";
+	else
+		std::cout << "There is no weapon\n";
 }
-
-
