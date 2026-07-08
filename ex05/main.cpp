@@ -5,23 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/05 17:15:51 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/06 13:42:28 by asauvage         ###   ########.fr       */
+/*   Created: 2026/07/08 11:39:49 by asauvage          #+#    #+#             */
+/*   Updated: 2026/07/08 11:41:02 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
-int	main () {
-	Zombie*	zombardinhos;
-	Zombie*	zomblia;
+int	main(void) {
+	Harl	abrevoir;
 
-	zombardinhos = zombieHorde(7, "Tahane");
-	for (int i = 0; i < 7; ++i)
-		zombardinhos[i].announce();
-	zomblia = zombieHorde(14, "GMT");
-	for (int i = 0; i < 14; ++i)
-		zomblia[i].announce();
-	delete[] zombardinhos;
-	delete[] zomblia;
+	abrevoir.complain("debug");
+	abrevoir.complain("info");
+	abrevoir.complain("error");
+	abrevoir.complain("warning");
 }
