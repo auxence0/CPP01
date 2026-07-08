@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/08 10:48:18 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/08 13:57:43 by asauvage         ###   ########.fr       */
+/*   Created: 2026/07/08 11:48:24 by asauvage          #+#    #+#             */
+/*   Updated: 2026/07/08 13:58:43 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ void	Harl::error ( void ) {
 }
 
 void	Harl::complain ( std::string level ) {
-
 	std::string	levels[] = {
 		"DEBUG",
 		"INFO",
@@ -41,16 +40,26 @@ void	Harl::complain ( std::string level ) {
 		"ERROR"
 	};
 
-	void	(Harl::* fptr[])(void) = {
-		&Harl::debug,
-		&Harl::info,
-		&Harl::warning,
-		&Harl::error
-	};
-
-	for (int i = 0; i < 4; ++i) {
-		if (level == levels[i]) {
-			(this->*fptr[i])();
-		}
+	int	index_level(0);
+	for (; index_level < 4; ++index_level) {
+		if (level == levels[index_level])
+			break ;
+	}
+	switch (index_level)
+	{
+		case 0:
+			debug();
+			//fallthrough
+		case 1:
+			info();
+			//fallthrough
+		case 2:
+			warning();
+			//fallthrough
+		case 3:
+			error();
+			break ;
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]";
 	}
 }
