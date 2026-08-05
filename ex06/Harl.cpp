@@ -6,7 +6,7 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 11:48:24 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/08 13:58:43 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/07/08 14:05:31 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	Harl::complain ( std::string level ) {
 			//fallthrough
 		case 2:
 			warning();
-			//fallthrough
+			//fallthrough0
 		case 3:
 			error();
 			break ;
