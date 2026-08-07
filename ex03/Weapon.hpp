@@ -6,7 +6,7 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 17:48:14 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/05 18:42:52 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/08/07 13:40:47 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class	Weapon {
 	public:
-		std::string	getType();
+		const std::string&	getType() const;
 		void		setType( std::string type );
 		Weapon (std::string type );
 	private:
