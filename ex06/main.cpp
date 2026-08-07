@@ -6,15 +6,19 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 13:52:59 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/08 13:59:01 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/08/07 14:19:56 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-int	main(void) {
+int	main(int ac, char **av) {
+
+	if (ac != 2)
+		return (1);
+
 	Harl	evite;
 
-	evite.complain("DEBUG");
+	evite.complain(av[1]);
 	return (0);
 }

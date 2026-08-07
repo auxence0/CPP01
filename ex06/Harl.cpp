@@ -6,29 +6,33 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 11:48:24 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/08 14:05:31 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/08/07 14:53:59 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
 void	Harl::debug ( void ) {
-	std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!\n";
+	std::cout << "[ DEBUG ]\n";
+	std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger.\nI really do!\n\n";
 	return ;
 }
 
 void	Harl::info ( void ) {
-	std::cout << "cannot believe adding extra bacon costs more money. You didn’t put enough bacon in my burger! If you did, I wouldn’t be asking for more!\n";
+	std::cout << "[ INFO ]\n";
+	std::cout << "cannot believe adding extra bacon costs more money.\nYou didn’t put enough bacon in my burger!\nIf you did, I wouldn’t be asking for more!\n\n";
 	return ;
 }
 
 void	Harl::warning ( void ) {
-	std::cout <<  "think I deserve to have some extra bacon for free. I’ve been coming for years, whereas you started working here just last month.\n";
+	std::cout << "[ WARNING ]\n";
+	std::cout <<  "think I deserve to have some extra bacon for free. I’ve been coming for years, whereas you started working here just last month.\n\n";
 	return ;
 }
 
 void	Harl::error ( void ) {
-	std::cout << "This is unacceptable! I want to speak to the manager now.\n";
+	std::cout << "[ ERROR ]\n";
+	std::cout << "This is unacceptable! I want to speak to the manager now.\n\n";
 	return ;
 }
 
@@ -55,11 +59,11 @@ void	Harl::complain ( std::string level ) {
 			//fallthrough
 		case 2:
 			warning();
-			//fallthrough0
+			//fallthrough
 		case 3:
 			error();
 			break ;
 		default:
-			std::cout << "[ Probably complaining about insignificant problems ]";
+			std::cout << "[ Probably complaining about insignificant problems ]\n";
 	}
 }
