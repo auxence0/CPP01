@@ -6,7 +6,7 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 11:39:49 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/08 11:41:02 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/08/07 14:09:42 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	main(void) {
 	Harl	abrevoir;
 
-	abrevoir.complain("debug");
-	abrevoir.complain("info");
-	abrevoir.complain("error");
-	abrevoir.complain("warning");
+	abrevoir.complain("DEBUG");
+	abrevoir.complain("INFO");
+	abrevoir.complain("ERROR");
+	abrevoir.complain("WARNING");
 }
