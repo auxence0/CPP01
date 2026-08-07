@@ -6,7 +6,7 @@
 /*   By: asauvage <asauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 17:15:51 by asauvage          #+#    #+#             */
-/*   Updated: 2026/07/06 13:42:28 by asauvage         ###   ########.fr       */
+/*   Updated: 2026/08/07 12:38:42 by asauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int	main () {
 	zomblia = zombieHorde(14, "GMT");
 	for (int i = 0; i < 14; ++i)
 		zomblia[i].announce();
-	delete[] zombardinhos;
 	delete[] zomblia;
+	delete[] zombardinhos;
 }
